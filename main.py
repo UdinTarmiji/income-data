@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 #load dataset
-url ="https://raw.githubusercontent.com/UdinTarmiji/income-data/refs/heads/main/data/income_data.csv"
+url ="https://raw.githubusercontent.com/UdinTarmiji/income-data/main/data/income_data.csv"
 data = pd.read_csv(url)
 
 #siapkan data
