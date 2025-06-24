@@ -37,4 +37,24 @@ if st.button("🎯 Prediksi Sekarang"):
         st.balloons()
         st.write("🔥 Wah pendapatanmu luar biasa!")
     elif prediksi >= 5_000_000:
-        st.write
+    st.write("🧠 Kerja cerdas! Pendapatanmu sudah bagus.")
+    else:
+        st.write("📈 Tetap semangat! Masih bisa ditingkatkan.")
+
+# --- Show Dataset ---
+with st.expander("📊 Lihat data pelatihan "):
+    st.dataframe(data)
+
+# --- Visualization ---
+st.header("📈 Visualisasi Data")
+fig, ax = plt.subplots()
+ax.scatter(data["jam_kerja"], data["pendapatan"], color='blue', label='Data')
+ax.set_xlabel("Jam Kerja per Minggu")
+ax.set_ylabel("Pendapatan (Rp)")
+ax.set_title("Hubungan Jam Kerja dan Pendapatan")
+ax.grid(True)
+st.pyplot(fig)
+
+# --- Footer ---
+st.markdown("---")
+st.caption(" by Dafiq | Powered by Machine Learning")
