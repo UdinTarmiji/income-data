@@ -37,7 +37,7 @@ if st.button("🎯 Prediksi Sekarang"):
         st.balloons()
         st.write("🔥 Wah pendapatanmu luar biasa!")
     elif prediksi >= 5_000_000:
-    st.write("🧠 Kerja cerdas! Pendapatanmu sudah bagus.")
+        st.write("🧠 Kerja cerdas! Pendapatanmu sudah bagus.")
     else:
         st.write("📈 Tetap semangat! Masih bisa ditingkatkan.")
 
